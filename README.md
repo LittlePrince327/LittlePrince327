@@ -31,7 +31,8 @@
 ![Data Visualization](https://img.shields.io/badge/Data%20Visualization-%234B0082.svg?style=flat-square)
 
 ## ⌨ My Baekjoon
-https://solved.ac/profile/tkdgml5717
+- [백준 프로필 (solved.ac)](https://solved.ac/profile/tkdgml5717)
+  
 ## 🏆 자격 및 수상
 - **컴퓨터 활용 능력 2급** (2021)
 - **MS PowerPoint 2010 (한글)** (2018)
