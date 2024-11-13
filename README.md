@@ -40,4 +40,5 @@
 
 ## 📫 연락처
 - **이메일**: tkdgml5717@naver.com
+- **Instagram**: isaac_5717
 - **노션**: [노션 링크](https://plausible-sedum-d7d.notion.site/a0fade69cdbc4bc7897c891024a79794?pvs=4)
