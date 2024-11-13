@@ -31,7 +31,7 @@
 ![Data Visualization](https://img.shields.io/badge/Data%20Visualization-%234B0082.svg?style=flat-square)
 
 ## ⌨ My Baekjoon
-[![백준 레벨](https://mazassumnida.wtf/api/v2/generate_badge?boj=tkdgml5717)](https://solved.ac/profile/tkdgml5717)
+[![백준 레벨](https://github.com/LittlePrince327/LittlePrince327/blob/main/assets/boj_level.png)](https://solved.ac/profile/tkdgml5717)
 
   
 ## 🏆 자격 및 수상
