@@ -13,13 +13,13 @@
 - **설명**: 소셜 미디어에서 비속어를 탐지하고 대체하는 시스템으로, 온라인 커뮤니티의 건전성을 강화했습니다.
 - **성과**: 비속어 필터링 성능을 93%까지 향상하고, BLEU 스코어 73점을 달성했습니다.
 - **기술**: KcELECTRA, LSTM, RNN
-- [[프로젝트 리포지토리]](https://github.com/yourname/profanity-filtering)
+- [[프로젝트 리포지토리](https://github.com/yourname/profanity-filtering)]
 
 ### 전통주 추천 알고리즘 프로젝트 (2023.08)
 - **설명**: 사용자 취향에 맞는 전통주를 추천하는 시스템을 구축했습니다.
 - **성과**: 85%의 추천 정확도를 달성했습니다.
 - **기술**: 협업 필터링, KNN, 코사인 유사도, 유클리드 유사도
-- [[프로젝트 리포지토리]]([https://github.com/eunsol1023/Idle_cloud.git])
+- [[프로젝트 리포지토리](https://github.com/eunsol1023/Idle_cloud.git)]
 
 ## 🛠️ 기술 스택
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
