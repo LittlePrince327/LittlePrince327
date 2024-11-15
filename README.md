@@ -43,7 +43,7 @@
 
 ## 🏆 수상
 - 비속어 필터링 캐글 상위8%
-![Kaggle Contest Reward](https://github.com/LittlePrince327/repository/blob/main/picture/kaggle_contest_reward.png?raw=true)
+![Kaggle Contest Reward](https://github.com/LittlePrince327/LittlePrince327/blob/main/picture/kaggle_contest_reward.png?raw=true)
 
 ## 📫 연락처
 - **이메일**: tkdgml5717@naver.com
