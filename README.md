@@ -43,6 +43,9 @@
 
 ## 🏆 수상
 - 비속어 필터링 캐글 상위8%
+  - [캐글 비속어 필터링 콘테스트 (GitHub)](https://github.com/YukyungShim/Competition/tree/main/01_Korean%20Hate%20Speech%20Detection)  
+  - [캐글 비속어 필터링 콘테스트 (Kaggle)](https://www.kaggle.com/competitions/korean-hate-speech-detection)
+
 ![Kaggle Contest Reward](https://github.com/LittlePrince327/LittlePrince327/blob/main/picture/kaggle_contest_reward.png?raw=true)
 
 ## 📫 연락처
