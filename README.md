@@ -34,12 +34,16 @@
 [![백준 레벨](https://mazassumnida.wtf/api/v2/generate_badge?boj=tkdgml5717)](https://solved.ac/profile/tkdgml5717)
 
   
-## 🏆 자격 및 수상
+## 🏆 자격증
 - **컴퓨터 활용 능력 2급** (2021)
 - **MS PowerPoint 2010 (한글)** (2018)
 - **MS Word 2010(Expert, 한글)** (2018)
 - **AdSP (2024년 예정)**
 - **SQLd (2024년 예정)**
+
+## 🏆 수상
+- 비속어 필터링 캐글 상위8%
+![Kaggle Contest Reward](https://github.com/LittlePrince327/repository/blob/main/picture/kaggle_contest_reward.png?raw=true)
 
 ## 📫 연락처
 - **이메일**: tkdgml5717@naver.com
