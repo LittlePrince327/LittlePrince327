@@ -48,6 +48,13 @@
 
 ![Kaggle Contest Reward](https://github.com/LittlePrince327/LittlePrince327/blob/main/picture/kaggle_contest_reward.png?raw=true)
 
+- 자연어 처리: 재난 트윗 분류 Kaggle 상위 7%
+
+  - [캐글 자연어 처리 콘테스트 (Kaggle)](https://www.kaggle.com/competitions/nlp-getting-started/overview)  
+  - [캐글 자연어 처리 코드 (GitHub)](링크를 추후 업데이트 예정)
+
+![NLP with Disaster Tweets](https://github.com/LittlePrince327/LittlePrince327/blob/main/picture/Natural%20Language%20Processing%20with%20Disaster%20Tweets.png)
+
 ## 📫 연락처
 - **이메일**: tkdgml5717@naver.com
 - **Instagram**: [isaac_5717](https://www.instagram.com/isaac_5717/)
