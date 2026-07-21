@@ -5,7 +5,7 @@
 
 ### 금융 플랫폼 프로젝트 (2024.07 - 2024.10)
 - **설명**: 사용자에게 자산 관리와 경제 관련 정보를 제공하는 AI 기반 금융 챗봇을 성공적으로 구축했습니다.
-- **성과**: 챗봇의 의도 인식 정확도를 92점까지, 유창성을 8/10점까지 끌어올렸으며, 주가 예측 모델을 통해 최대 70%의 정확도와 8%의 MAE를 달성했습니다.
+- **성과**: Kf-DeBERTa 기반 의도 분류 모델에서 Accuracy 0.90과 F1 0.90을 기록했으며, 문장 생성 모델의 유창성은 8/10점으로 평가했습니다. 주가 예측은 자산·모델별 MSE, RMSE, MAE, R² 평가표를 기준으로 비교했습니다.
 - **기술**: KcBERT, Kf-DeBERTa, GPT2NMHeadModel, RAG, STT&TTS, Entity extraction
 - [[프로젝트 리포지토리](https://github.com/LittlePrince327/AICC_MyAssetPlan.git)]
 
