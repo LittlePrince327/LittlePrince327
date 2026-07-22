@@ -3,11 +3,13 @@
 
 ## 📚 프로젝트 경험
 
-### 콜센터 STT 품질 검증 프로젝트 (CER 0.0761, 2025.03 - 2025.05)
+### 콜센터 STT 품질 검증 프로젝트 (2025.03 - 2025.05)
 - **설명**: 콜센터 음성의 포맷 편차와 장문 전사 문제를 개선하기 위해 Whisper 모델군 비교, 도메인 파인튜닝, CER 기반 오류 분석과 후처리 파이프라인 실험을 수행했습니다.
-- **성과**: 992개 음성 샘플에서 Whisper 6종을 비교해 Large v3 Turbo 평균 CER 0.0889를 확인했으며, 후처리 포함 최저 CER 0.0761을 기록했습니다. 모델 원본 출력 기준 최적 설정은 `lr=3.16e-6`, `4 epochs`, `linear scheduler`, `16kHz`입니다.
+- **핵심 결과**: 992개 음성 샘플에서 Whisper 기본 모델 6종을 비교해 Large v3 Turbo 평균 CER 0.0889를 확인했습니다.
+- **파인튜닝 결과**: 모델 원본 출력 기준 Full fine-tuning 최적 평균 CER는 0.1756이며, 설정은 `learning_rate=3.16e-6`, `4 epochs`, `linear scheduler`, `16kHz`입니다.
+- **후처리 결과**: 세그먼트 병합과 텍스트 정규화 등 후처리를 포함한 최저 평균 CER는 0.0761입니다.
 - **기술**: Python, PyTorch, Hugging Face Transformers, Whisper, CER, LoRA/PEFT, Google Colab
-- **추후 과제**: 독립 평가셋 재검증, WER 병행 측정, 운영 환경 연동 및 배포
+- **추후 과제**: LoRA 동일 평가셋 CER 재검증, 독립 평가셋 재검증, WER 병행 측정, 운영 환경 연동 및 실제 배포
 - **공개 범위**: 회사 내부 데이터와 원본 코드는 공개하지 않습니다.
 - [검증 요약 문서](./docs/STT_WhisperLargeV3Turbo_검증요약_최종(0.0761)_20250529.md)
 
@@ -17,7 +19,7 @@
 - **기술**: KcBERT, Kf-DeBERTa, GPT2NMHeadModel, RAG, STT&TTS, Entity extraction
 - [[프로젝트 리포지토리](https://github.com/LittlePrince327/AICC_MyAssetPlan.git)]
 
-### 비속어 필터링 챗팅 프로젝트 (2023.10 - 2023.12)
+### 비속어 필터링 채팅 프로젝트 (2023.10 - 2023.12)
 - **설명**: 소셜 미디어에서 비속어를 탐지하고 대체하는 시스템으로, 온라인 커뮤니티의 건전성을 강화했습니다.
 - **성과**: 비속어 필터링 성능을 93%까지 향상하고, BLEU 스코어 73점을 달성했습니다.
 - **기술**: KcELECTRA, RNN, LSTM
@@ -62,7 +64,7 @@
 - 재난 트윗 분류 Kaggle 상위 7%
 
   - [캐글 자연어 처리 콘테스트 (Kaggle)](https://www.kaggle.com/competitions/nlp-getting-started/overview)  
-  - [캐글 자연어 처리 코드 (GitHub)](링크를 추후 업데이트 예정)
+  - 캐글 자연어 처리 코드는 추후 공개 예정입니다.
 
 ![NLP with Disaster Tweets](https://github.com/LittlePrince327/LittlePrince327/blob/main/picture/Natural%20Language%20Processing%20with%20Disaster%20Tweets.png)
 
