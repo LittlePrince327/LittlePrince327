@@ -9,7 +9,7 @@
 - **기술**: Python, PyTorch, Hugging Face Transformers, Whisper, CER, LoRA/PEFT, Google Colab
 - **추후 과제**: 독립 평가셋 재검증, WER 병행 측정, 운영 환경 연동 및 배포
 - **공개 범위**: 회사 내부 데이터와 원본 코드는 공개하지 않습니다.
-- [검증 요약 문서](./docs/stt_project_summary(0.0761).md)
+- [검증 요약 문서](./docs/STT_WhisperLargeV3Turbo_검증요약_최종(0.0761)_20250529.md)
 
 ### 금융 플랫폼 프로젝트 (2024.07 - 2024.10)
 - **설명**: 사용자에게 자산 관리와 경제 관련 정보를 제공하는 AI 기반 금융 챗봇을 성공적으로 구축했습니다.
