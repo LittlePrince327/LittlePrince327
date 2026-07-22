@@ -3,6 +3,13 @@
 
 ## 📚 프로젝트 경험
 
+### 콜센터 STT 품질 검증 프로젝트 (2025.03 - 2025.05)
+- **설명**: 콜센터 음성의 포맷 편차와 장문 전사 문제를 개선하기 위해 Whisper 모델군 비교, 도메인 파인튜닝, CER 기반 오류 분석과 후처리 파이프라인 실험을 수행했습니다.
+- **성과**: 992개 음성 샘플에서 Whisper 6종을 비교해 Large v3 Turbo 평균 CER 8.89%를 확인했으며, 모델 원본 출력 기준 `lr=3.16e-6`, `4 epochs`, `linear scheduler`, `16kHz` 설정을 선정했습니다.
+- **기술**: Python, PyTorch, Hugging Face Transformers, Whisper, CER, LoRA/PEFT, Google Colab
+- **상태**: 실험·검증 단계이며 실제 운영 환경에는 배포하지 않았습니다. 회사 내부 데이터와 원본 코드는 공개하지 않습니다.
+- [검증 요약 문서](./docs/stt_project_summary.md)
+
 ### 금융 플랫폼 프로젝트 (2024.07 - 2024.10)
 - **설명**: 사용자에게 자산 관리와 경제 관련 정보를 제공하는 AI 기반 금융 챗봇을 성공적으로 구축했습니다.
 - **성과**: Kf-DeBERTa 기반 의도 분류 모델에서 Accuracy 0.90과 F1 0.90을 기록했으며, 문장 생성 모델의 유창성은 8/10점으로 평가했습니다. 주가 예측은 자산·모델별 MSE, RMSE, MAE, R² 평가표를 기준으로 비교했습니다.
@@ -59,6 +66,6 @@
 ![NLP with Disaster Tweets](https://github.com/LittlePrince327/LittlePrince327/blob/main/picture/Natural%20Language%20Processing%20with%20Disaster%20Tweets.png)
 
 ## 📫 연락처
-- **이메일**: tkdgml5717@naver.com
+- **이메일**: tkdgml571728@gmail.com
 - **Instagram**: [isaac_5717](https://www.instagram.com/isaac_5717/)
 - **노션**: [노션 링크](https://plausible-sedum-d7d.notion.site/a0fade69cdbc4bc7897c891024a79794?pvs=4)
