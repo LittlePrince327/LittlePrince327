@@ -1,6 +1,6 @@
 <div align="center">
   <h1>박상희 · AI Engineer</h1>
-  <h3>데이터 품질 관리 × 모델 성능 검증 × AI 서비스 구현</h3>
+  <h3>데이터 품질 통제 × 모델 성능 검증 × AI 서비스 구현</h3>
   <p>
     데이터 전처리부터 모델 학습·추론·평가, API·DB 연동, AWS 실행 환경 구성까지 경험했습니다.<br/>
     <strong>콜센터 STT 품질 검증 · LLM 상담 요약/품질 평가 벤치마크 · 금융 AI 챗봇 · 비속어 필터링 · AI 위험성평가 서비스</strong>를 수행했습니다.
@@ -98,7 +98,7 @@
 |---|---:|---:|---|
 | **Microsoft Phi-4 Q4** | 14B | **230/240** | 전반 품질 · 반복 일관성 |
 | **Llama-3 Korean Bllossom Q4_K_M** | 8B | **230/240** | 점수 합산 · 한국어 맥락 |
-| **Mistral-Small Instruct 2501 Q4_K_L** | 24B | **230/240** | 요약 길이 준수 · 일관성 |
+| **Mistral-Small 24B Instruct Q4_K_L** | 24B | **230/240** | 요약 길이 준수 · 일관성 |
 
 > 이 평가는 **공인 벤치마크가 아닌 프로젝트 자체 기준**이며, 제한된 상담 예시 1건을 이용한 후보 비교입니다.  
 > 공동 최고 3개는 단일 운영 모델 확정이 아니라 **상위 후보군 도출 결과**입니다.
@@ -141,7 +141,7 @@
 **2023.10 ~ 2023.12 · 인공지능사관학교 4기 기업연계 팀 프로젝트**  
 [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github)](https://github.com/LittlePrince327/X_filter)
 
-SNS 게시글·캡션·채팅 문장에서 **비속어 포함 여부를 분류**하고, 비속어 표현을 순화하거나 문맥을 유지한 대체 문장을 생성하는 프로토타입을 개발했습니다.
+SNS 게시글·캡션·채팅 문장에서 **비속어 포함 여부를 분류**하고, 정상 문장은 유지하며 비속어 문장에는 사전 기반 순화 표현 후보를 제시하는 프로토타입을 개발했습니다.
 
 ### My Contribution
 
@@ -149,7 +149,7 @@ SNS 게시글·캡션·채팅 문장에서 **비속어 포함 여부를 분류**
 - **Logistic Regression · RandomForest · KcELECTRA · KcBERT** 비교·평가
 - KcBERT 분류 모델 학습·평가 및 혼동행렬 기반 오류 분석
 - 사전 기반 치환 로직 · RNN/LSTM 기반 대체 문장 생성 실험
-- **Django REST API 엔드포인트 구현**
+- **Django REST API 엔드포인트 골격 구현**
 
 ### Dataset
 
@@ -162,16 +162,27 @@ SNS 게시글·캡션·채팅 문장에서 **비속어 포함 여부를 분류**
 
 ### KcBERT Classification
 
-> **기존 프로젝트 결과 기록 기준**
+> **저장된 KcBERT 평가 혼동행렬 기준 재계산** · positive class = 비속어(label 1)
 
 | Accuracy | Precision | Recall | F1 |
 |---:|---:|---:|---:|
-| **0.96** | **0.97** | **0.95** | **0.96** |
+| **0.9648** | **0.9651** | **0.9709** | **0.9680** |
+
+<details>
+<summary><b>Confusion Matrix 값 보기</b></summary>
+<br/>
+
+| TN | FP | FN | TP |
+|---:|---:|---:|---:|
+| 18,389 | 820 | 680 | 22,698 |
+
+</details>
 
 ### Replacement / Generation
 
-- RNN·LSTM 기반 대체 문장 생성 결과: **BLEU 73** *(기존 프로젝트 결과 기록 기준)*
-- 원시 예측·참조 문장과 평가 로그를 확보한 경우 동일 조건 재평가가 가능하도록 [X-filter `evaluation/`](https://github.com/LittlePrince327/X_filter/tree/main/evaluation) 스크립트를 정리했습니다.
+- 사전 기반 치환 및 RNN·LSTM 기반 대체 문장 생성 실험
+- 과거 프로젝트 문서에는 **BLEU 73**이 기록되어 있으나, 최종 원시 예측·참조 문장과 평가 로그를 한 세트로 확보한 뒤 재평가가 필요합니다.
+- 동일 조건 재평가 절차는 [X-filter `evaluation/`](https://github.com/LittlePrince327/X_filter/tree/main/evaluation)과 [`docs/XFILTER_METRICS.md`](https://github.com/LittlePrince327/X_filter/blob/main/docs/XFILTER_METRICS.md)에 정리했습니다.
 
 **Tech**  
 `KcBERT` `KcELECTRA` `scikit-learn` `RNN` `LSTM` `Django REST Framework`
@@ -211,7 +222,7 @@ PostgreSQL(RDS) 저장 · S3 private 이미지 연동
 - `/assess` 평가 API 및 `/api/hazard-decisions` 사용자 선택값 저장 흐름 구성
 - 사용자 선택 결과 **AWS RDS(PostgreSQL)** 저장 · **S3 private 이미지** 연동
 - 실제 RDS 적용 기준 **10개 테이블** DDL 구성·연동
-- **VPC · IAM · EC2 · RDS · S3** 인프라 구성
+- **EC2 · RDS · S3** 기반 실행·데이터 환경 구성
 - **Nginx · Uvicorn · systemd** 실행 환경 구성 및 외부 API 동작 확인
 - **GitHub Actions main 브랜치 자동 배포** 흐름 구성
 
@@ -222,7 +233,7 @@ PostgreSQL(RDS) 저장 · S3 private 이미지 연동
 - 논문 저자가 아니라 **시스템 구현 기여자**입니다.
 
 **Tech**  
-`Python` `FastAPI` `Pydantic` `OpenAI Responses API` `PostgreSQL` `AWS VPC` `IAM` `RDS` `S3` `EC2` `Nginx` `Uvicorn` `systemd` `GitHub Actions`
+`Python` `FastAPI` `Pydantic` `OpenAI Responses API` `PostgreSQL` `AWS RDS` `AWS S3` `AWS EC2` `Nginx` `Uvicorn` `systemd` `GitHub Actions`
 
 ---
 
@@ -234,7 +245,7 @@ PostgreSQL(RDS) 저장 · S3 private 이미지 연동
 | **AI / ML** | `PyTorch` `Hugging Face Transformers` `Whisper` `KF-DeBERTa` `KcBERT` `KcELECTRA` `scikit-learn` `XGBoost` |
 | **LLM / NLP** | `GGUF` `Ollama` `OpenAI API` `SentenceTransformer` `FAISS` `Prompt Engineering` `LoRA/PEFT` `Quantization` |
 | **Backend / DB** | `FastAPI` `Pydantic` `PostgreSQL` `MariaDB` `AWS RDS` |
-| **Infra / Deployment** | `Git` `GitHub` `Linux` `AWS VPC` `IAM` `EC2` `S3` `Nginx` `Uvicorn` `systemd` `GitHub Actions` `CI/CD` |
+| **Infra / Deployment** | `Git` `GitHub` `Linux` `AWS EC2` `AWS S3` `Nginx` `Uvicorn` `systemd` `GitHub Actions` `CI/CD` |
 
 ---
 
