@@ -1,24 +1,22 @@
 <div align="center">
-
-# 박상희 · AI Engineer
-
-### 데이터 품질 관리 × 모델 성능 검증 × AI 서비스 구현
-
-데이터 전처리부터 모델 학습·추론·평가, API·DB 연동, AWS 실행 환경 구성까지 경험했습니다.  
-**콜센터 STT 품질 검증 · LLM 상담 요약/품질 평가 벤치마크 · 금융 AI 챗봇 · 비속어 필터링 · AI 위험성평가 서비스**를 수행했습니다.
-
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
-  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face"/>
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-</p>
-
-**씨넷테크놀로지 AI 엔지니어 인턴 · 2025.03 ~ 2025.05**  
-NLP · STT/ASR · LLM Evaluation · AI Backend
-
+  <h1>박상희 · AI Engineer</h1>
+  <h3>데이터 품질 관리 × 모델 성능 검증 × AI 서비스 구현</h3>
+  <p>
+    데이터 전처리부터 모델 학습·추론·평가, API·DB 연동, AWS 실행 환경 구성까지 경험했습니다.<br/>
+    <strong>콜센터 STT 품질 검증 · LLM 상담 요약/품질 평가 벤치마크 · 금융 AI 챗봇 · 비속어 필터링 · AI 위험성평가 서비스</strong>를 수행했습니다.
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+    <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
+    <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face"/>
+    <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>
+    <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS"/>
+    <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+  </p>
+  <p>
+    <strong>씨넷테크놀로지 AI 엔지니어 인턴 · 2025.03 ~ 2025.05</strong><br/>
+    NLP · STT/ASR · LLM Evaluation · AI Backend
+  </p>
 </div>
 
 ---
@@ -173,7 +171,7 @@ SNS 게시글·캡션·채팅 문장에서 **비속어 포함 여부를 분류**
 ### Replacement / Generation
 
 - RNN·LSTM 기반 대체 문장 생성 결과: **BLEU 73** *(기존 프로젝트 결과 기록 기준)*
-- 원시 예측·참조 문장과 평가 로그를 확보한 경우 동일 조건 재평가가 가능하도록 `evaluation/` 스크립트를 정리했습니다.
+- 원시 예측·참조 문장과 평가 로그를 확보한 경우 동일 조건 재평가가 가능하도록 [X-filter `evaluation/`](https://github.com/LittlePrince327/X_filter/tree/main/evaluation) 스크립트를 정리했습니다.
 
 **Tech**  
 `KcBERT` `KcELECTRA` `scikit-learn` `RNN` `LSTM` `Django REST Framework`
@@ -284,19 +282,18 @@ PostgreSQL(RDS) 저장 · S3 private 이미지 연동
 
 # 06. Algorithm & Problem Solving
 
-<div align="center">
-
-[![백준 레벨](https://mazassumnida.wtf/api/v2/generate_badge?boj=tkdgml5717)](https://solved.ac/profile/tkdgml5717)
-
-</div>
+<p align="center">
+  <a href="https://solved.ac/profile/tkdgml5717">
+    <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=tkdgml5717" alt="Baekjoon solved.ac profile"/>
+  </a>
+</p>
 
 ---
 
 <div align="center">
-
-## Contact
-
-**Email** · `tkdgml571728@gmail.com`  
-**GitHub** · [github.com/LittlePrince327](https://github.com/LittlePrince327)
-
+  <h2>Contact</h2>
+  <p>
+    <strong>Email</strong> · tkdgml571728@gmail.com<br/>
+    <strong>GitHub</strong> · <a href="https://github.com/LittlePrince327">github.com/LittlePrince327</a>
+  </p>
 </div>
