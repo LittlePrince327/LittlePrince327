@@ -6,7 +6,7 @@
     <strong>콜센터 STT 품질 검증 · LLM 상담 요약/품질 평가 벤치마크 · 금융 AI 챗봇 · 비속어 탐지·순화 · AI 위험성평가 서비스</strong>를 수행했습니다.
   </p>
   <p>
-    <a href="#-profile-at-a-glance"><img src="https://img.shields.io/badge/Portfolio-View-2563EB?style=flat-square" alt="Portfolio"/></a>
+    <a href="./docs/PORTFOLIO.md"><img src="https://img.shields.io/badge/Portfolio-View-2563EB?style=flat-square" alt="Portfolio"/></a>
     <a href="./docs/RESUME.md"><img src="https://img.shields.io/badge/Resume-View-4B5563?style=flat-square" alt="Resume"/></a>
     <a href="mailto:tkdgml571728@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
   </p>
@@ -314,6 +314,7 @@ PostgreSQL(RDS) 저장 · S3 private 이미지 연동
   <h2>Contact</h2>
   <p>
     <strong>Email</strong> · tkdgml571728@gmail.com<br/>
+    <strong>Portfolio</strong> · <a href="./docs/PORTFOLIO.md">docs/PORTFOLIO.md</a><br/>
     <strong>Resume</strong> · <a href="./docs/RESUME.md">docs/RESUME.md</a><br/>
     <strong>GitHub</strong> · <a href="https://github.com/LittlePrince327">github.com/LittlePrince327</a>
   </p>
