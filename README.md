@@ -2,8 +2,13 @@
   <h1>박상희 · AI Engineer</h1>
   <h3>데이터 품질 통제 × 모델 성능 검증 × AI 서비스 구현</h3>
   <p>
-    데이터 전처리부터 모델 학습·추론·평가, API·DB 연동, AWS 실행 환경 구성까지 경험했습니다.<br/>
-    <strong>콜센터 STT 품질 검증 · LLM 상담 요약/품질 평가 벤치마크 · 금융 AI 챗봇 · 비속어 필터링 · AI 위험성평가 서비스</strong>를 수행했습니다.
+    데이터 품질과 평가 기준을 통제하고, 검증된 모델을 API·DB·서비스 실행 환경까지 연결해 온 AI 엔지니어입니다.<br/>
+    <strong>콜센터 STT 품질 검증 · LLM 상담 요약/품질 평가 벤치마크 · 금융 AI 챗봇 · 비속어 탐지·순화 · AI 위험성평가 서비스</strong>를 수행했습니다.
+  </p>
+  <p>
+    <a href="#-profile-at-a-glance"><img src="https://img.shields.io/badge/Portfolio-View-2563EB?style=flat-square" alt="Portfolio"/></a>
+    <a href="./docs/RESUME.md"><img src="https://img.shields.io/badge/Resume-View-4B5563?style=flat-square" alt="Resume"/></a>
+    <a href="mailto:tkdgml571728@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
   </p>
   <p>
     <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
@@ -15,7 +20,7 @@
   </p>
   <p>
     <strong>씨넷테크놀로지 AI 엔지니어 인턴 · 2025.03 ~ 2025.05</strong><br/>
-    NLP · STT/ASR · LLM Evaluation · AI Backend
+    NLP · STT/ASR · LLM Evaluation
   </p>
 </div>
 
@@ -25,7 +30,7 @@
 
 | 영역 | 핵심 경험 | 검증 포인트 |
 |---|---|---|
-| **STT / ASR** | 콜센터 음성 품질 검증 · Whisper 비교/파인튜닝/후처리 | 1,000건 검수 → 992개 평가 · 기본 모델 6종 · CER 조건별 분리 |
+| **STT / ASR** | 콜센터 음성 품질 검증 · Whisper 비교/파인튜닝/후처리 | 원본 1,000건 검수 · 무음 8건 제외 → 유효 평가 992개 · 기본 모델 6종 · CER 조건별 분리 |
 | **LLM Evaluation** | 상담 요약·품질 평가 후보 비교 | 26개 테스트 기록 → 12개 상세 비교 · 공동 최고 230/240 3개 |
 | **NLP Service** | MAP 금융 챗봇 · X-filter | KF-DeBERTa 의도 분류 · KcBERT 비속어 분류 · 검색/생성 파이프라인 |
 | **AI Backend / AWS** | CLEAR 위험성평가 서비스 | FastAPI · RDS/S3 · EC2 · Nginx/Uvicorn · GitHub Actions |
@@ -41,7 +46,7 @@
 **씨넷테크놀로지 · AI 엔지니어 인턴 · 2025.03 ~ 2025.05**  
 `STT 전처리` · `모델 비교` · `Full fine-tuning` · `CER 평가` · `후처리`
 
-### What I did
+### My Contribution
 
 - 인턴 동료와 함께 원본 음성 **1,000건**을 직접 청취·검수하고, 발화가 없는 무음 8건을 제외해 **992개 유효 평가 샘플** 확정
 - PCM/WAV의 샘플레이트·채널·샘플 폭을 확인해 **16kHz · mono · 16-bit WAV**로 입력 조건 통일
@@ -55,7 +60,7 @@
 
 | 평가 조건 | 평균 CER | 비고 |
 |---|---:|---|
-| **Large v3 Turbo · Base** | **0.0889** | 기본 모델 6종 비교 결과 |
+| **Large v3 Turbo · 기본 모델** | **0.0889** | 기본 모델 6종 비교 결과 |
 | **Full fine-tuning · Raw output** | **0.1756** | lr 3.16e-6 · 4 epochs · linear scheduler |
 | **Full fine-tuning + Post-processing** | **0.0761** | lr 1e-5 · 3 epochs · 세그먼트 병합/텍스트 정규화 포함 |
 
@@ -104,7 +109,9 @@
 > 공동 최고 3개는 단일 운영 모델 확정이 아니라 **상위 후보군 도출 결과**입니다.
 
 **Tech**  
-`GGUF` `Prompt Engineering` `LLM Evaluation` `JSON Output Analysis`
+`GGUF` `Prompt Engineering` `LLM Evaluation`
+
+📄 [LLM 벤치마크 검증 요약 보기](./docs/LLM_상담평가_벤치마크_검증요약.md)
 
 ---
 
@@ -136,7 +143,7 @@
 
 ---
 
-## 🛡️ X-filter · SNS Profanity Filtering & Rewriting
+## 🛡️ X-filter · SNS Profanity Detection & Replacement
 
 **2023.10 ~ 2023.12 · 인공지능사관학교 4기 기업연계 팀 프로젝트**  
 [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github)](https://github.com/LittlePrince327/X_filter)
@@ -235,6 +242,8 @@ PostgreSQL(RDS) 저장 · S3 private 이미지 연동
 **Tech**  
 `Python` `FastAPI` `Pydantic` `OpenAI Responses API` `PostgreSQL` `AWS RDS` `AWS S3` `AWS EC2` `Nginx` `Uvicorn` `systemd` `GitHub Actions`
 
+📄 [CLEAR 구현 요약 보기](./docs/CLEAR_AI_위험성평가_구현요약.md)
+
 ---
 
 # 03. Tech Stack
@@ -243,9 +252,9 @@ PostgreSQL(RDS) 저장 · S3 private 이미지 연동
 |---|---|
 | **Languages / Data** | `Python` `SQL` `pandas` `NumPy` |
 | **AI / ML** | `PyTorch` `Hugging Face Transformers` `Whisper` `KF-DeBERTa` `KcBERT` `KcELECTRA` `scikit-learn` `XGBoost` |
-| **LLM / NLP** | `GGUF` `Ollama` `OpenAI API` `SentenceTransformer` `FAISS` `Prompt Engineering` `LoRA/PEFT` `Quantization` |
+| **LLM / NLP** | `GGUF` `Ollama` `OpenAI API` `SentenceTransformer` `FAISS` `Prompt Engineering` `LoRA/PEFT` |
 | **Backend / DB** | `FastAPI` `Pydantic` `PostgreSQL` `MariaDB` `AWS RDS` |
-| **Infra / Deployment** | `Git` `GitHub` `Linux` `AWS EC2` `AWS S3` `Nginx` `Uvicorn` `systemd` `GitHub Actions` `CI/CD` |
+| **Infra / Deployment** | `Git` `GitHub` `Linux` `AWS EC2` `AWS S3` `Nginx` `Uvicorn` `systemd` `GitHub Actions (CI/CD)` |
 
 ---
 
@@ -305,6 +314,7 @@ PostgreSQL(RDS) 저장 · S3 private 이미지 연동
   <h2>Contact</h2>
   <p>
     <strong>Email</strong> · tkdgml571728@gmail.com<br/>
+    <strong>Resume</strong> · <a href="./docs/RESUME.md">docs/RESUME.md</a><br/>
     <strong>GitHub</strong> · <a href="https://github.com/LittlePrince327">github.com/LittlePrince327</a>
   </p>
 </div>
